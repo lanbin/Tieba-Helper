@@ -1,0 +1,15 @@
+﻿{
+"name": "贴吧助手",
+"version": "2.0",
+"description": "在贴子标题旁边增加了直接进入只看楼主的链接。pb页支持方向键左右翻页！",
+"content_scripts": [{ 
+	"js" : ["jquery-1.7.1.min.js", "oa.js"],
+	"matches" : ["http://tieba.baidu.com/f*"],
+	"run_at": "document_end" },
+	{
+	"js" : ["jquery-1.7.1.min.js","pb.js"],
+	"matches" : ["http://tieba.baidu.com/p/*"],
+	"run_at": "document_end"
+	}],
+"manifest_version": 2
+}
